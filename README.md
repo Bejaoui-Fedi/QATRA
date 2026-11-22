@@ -81,3 +81,8 @@ Les bibliothèques Arduino utilisées comprennent `Wire`, `SPI`, `SD` et `Liquid
 Le comportement dépend des seuils et des modèles de capteurs configurés pour la simulation. Les économies d'eau ou d'énergie restent des objectifs à mesurer lors d'essais ; elles ne sont pas présentées ici comme des résultats validés.
 
 Les suites envisagées comprennent une migration vers des ESP32 et MQTT, une supervision à distance, un suivi énergétique et une analyse des historiques. Pour le contexte complet du projet, voir [Qatra_Solitech_Presentation.md](Qatra_Solitech_Presentation.md).
+
+
+## Suite IoT — ESP32 et MQTT
+
+La branche [`solution-iot`](https://github.com/Bejaoui-Fedi/QATRA/tree/solution-iot) présente la suite du projet, qui relie deux ESP32 au moyen du protocole MQTT pour transmettre les mesures, superviser le système et commander la pompe. Elle comprend son propre README illustré décrivant l'architecture, les sujets MQTT, les protections et la configuration.

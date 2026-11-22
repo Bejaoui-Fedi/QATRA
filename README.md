@@ -8,7 +8,10 @@
 
 Le montage réunit une unité d'acquisition, une unité de traitement et de commande, ainsi qu'une liaison série UART à **9 600 bauds**.
 
-![Vue générale de la simulation Proteus QATRA](UART%20%E2%80%93%209600%20bauds.PNG)
+<p align="center">
+  <img src="UART%20%E2%80%93%209600%20bauds.PNG" alt="Vue générale de la simulation Proteus QATRA" width="900">
+</p>
+<p align="center"><em>Vue d'ensemble : acquisition, liaison UART et commande de l'irrigation.</em></p>
 
 ## Fonctionnement du prototype
 
@@ -23,21 +26,33 @@ La première carte relève les paramètres simulés de la parcelle et du circuit
 
 Les mesures sont envoyées périodiquement à la seconde carte au format série `T:...,H:...,S:...,W:...,F:...`.
 
-![Capteurs et unité d'acquisition de la simulation](Surveillance%20agricole.PNG)
-
 ### 2. Décision et commande — Arduino Uno 2
 
 La seconde carte reçoit et interprète les mesures. Elle les affiche sur l'écran LCD, signale les états et alertes à l'aide de LEDs et d'un buzzer, et commande la pompe via un étage transistor-relais. Le programme peut aussi enregistrer les mesures sur carte SD.
 
 La pompe ne démarre que si des mesures valides sont disponibles, que la liaison fonctionne et que le réservoir n'est pas sous le seuil critique. Elle s'arrête lorsque l'humidité cible est atteinte, si une condition de sécurité apparaît ou si la durée maximale de fonctionnement est dépassée. Les seuils sont définis dans le programme de l'Arduino 2.
 
-![Unité de contrôle, affichage et commande de la pompe](Gestion%20intelligente.PNG)
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="Surveillance%20agricole.PNG" alt="Capteurs et unité d'acquisition de la simulation" width="420">
+      <br><strong>Arduino Uno 1 — Acquisition des capteurs</strong>
+    </td>
+    <td align="center" width="50%">
+      <img src="Gestion%20intelligente.PNG" alt="Unité de contrôle, affichage et commande de la pompe" width="420">
+      <br><strong>Arduino Uno 2 — Traitement et commande</strong>
+    </td>
+  </tr>
+</table>
 
 ### 3. Alimentation — schéma complémentaire
 
 Ce schéma illustre un bloc d'alimentation étudié séparément, avec panneau solaire, batterie et régulation. Il complète la réflexion sur l'autonomie énergétique ; il ne représente pas à lui seul l'ensemble du circuit d'irrigation.
 
-![Schéma complémentaire d'alimentation solaire et régulée](bloc%20Alimenation.PNG)
+<p align="center">
+  <img src="bloc%20Alimenation.PNG" alt="Schéma complémentaire d'alimentation solaire et régulée" width="720">
+</p>
+<p align="center"><em>Étude séparée du bloc d'alimentation solaire et de la régulation.</em></p>
 
 ## Contenu du dépôt
 

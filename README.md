@@ -86,3 +86,14 @@ Les suites envisagées comprennent une migration vers des ESP32 et MQTT, une sup
 ## Suite IoT — ESP32 et MQTT
 
 La branche [`solution-iot`](https://github.com/Bejaoui-Fedi/QATRA/tree/solution-iot) présente la suite du projet, qui relie deux ESP32 au moyen du protocole MQTT pour transmettre les mesures, superviser le système et commander la pompe. Elle comprend son propre README illustré décrivant l'architecture, les sujets MQTT, les protections et la configuration.
+
+
+## Naviguer dans les branches du projet
+
+Chaque branche rassemble une version ou un volet différent de QATRA. Ouvrez la branche pour parcourir ses fichiers ou son README pour accéder à sa présentation.
+
+| Branche | Contenu | Documentation |
+| --- | --- | --- |
+| [`main`](https://github.com/Bejaoui-Fedi/QATRA/tree/main) | Simulation Proteus et prototype embarqué Arduino Uno | [README principal](https://github.com/Bejaoui-Fedi/QATRA/blob/main/README.md) |
+| [`solution-iot`](https://github.com/Bejaoui-Fedi/QATRA/tree/solution-iot) | Suite connectée avec deux ESP32 et MQTT | [README Solution IoT](https://github.com/Bejaoui-Fedi/QATRA/blob/solution-iot/README.md) |
+| [`prototype`](https://github.com/Bejaoui-Fedi/QATRA/tree/prototype) | Essais matériels LoRa et mesure ultrasonique du niveau d'eau | [README Prototype](https://github.com/Bejaoui-Fedi/QATRA/blob/prototype/Prototype/README.md) |

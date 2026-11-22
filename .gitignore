@@ -1,0 +1,9 @@
+# Proteus machine-specific workspace and backups
+*.user.workspace
+Project Backups/
+
+# Arduino build outputs
+**/build/
+
+# Separate solar test project
+TestSolar.pdsprj*
